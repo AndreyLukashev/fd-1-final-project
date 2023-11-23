@@ -1,7 +1,7 @@
 @use '../../global/mixins/base-font';
+@use '../../global/colors';
 
 .title-h1 {
-    @include base-font.basefont;
     font-size: 48px;
     font-weight: 600;
     line-height: normal;
@@ -9,7 +9,6 @@
 }
 
 .title-h2 {
-    @include base-font.basefont;
     font-size: 32px;
     font-weight: 600;
     line-height: normal;
@@ -17,7 +16,6 @@
 }
 
 .title-h3 {
-    @include base-font.basefont;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -25,7 +23,6 @@
 }
 
 .title-h4 {
-    @include base-font.basefont;
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
@@ -33,15 +30,43 @@
 }
 
 .title-h5 {
-    @include base-font.basefont;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
 }
 
 .title-h6 {
-    @include base-font.basefont;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
+}
+
+.text-info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.text-small {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-base {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-normal {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.text-muted {
+    color: colors.$gray500;
 }
