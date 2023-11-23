@@ -1,0 +1,47 @@
+@use '../../global/mixins/base-font';
+
+.title-h1 {
+    @include base-font.basefont;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.6px;
+}
+
+.title-h2 {
+    @include base-font.basefont;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.title-h3 {
+    @include base-font.basefont;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+
+.title-h4 {
+    @include base-font.basefont;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.title-h5 {
+    @include base-font.basefont;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title-h6 {
+    @include base-font.basefont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
