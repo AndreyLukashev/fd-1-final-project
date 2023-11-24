@@ -1,0 +1,12 @@
+@use '../../../global/colors';
+@use '../../../global/mixins/element-border';
+
+.form-control {
+    @include element-border.elementBorder;
+    font-size: 16px;
+    color: colors.$dark;
+    height: 40px;
+    display: blok;
+    color: colors.$dark;
+    padding: 10px;
+}

@@ -1,7 +1,9 @@
-import 'reset-css'
+import 'reset-css';
 
-import './main.scss'
+import './main.scss';
 
-import './src/components/typography/typography'
+import './src/components/typography/typography';
 
-import './src/components/grid/grid.js'
+import './src/components/grid/grid.js';
+
+import './src/components/forms/forms';
