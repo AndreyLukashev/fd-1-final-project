@@ -1,12 +1,20 @@
 @use '../../../global/colors';
-@use '../../../global/mixins/element-border';
+@use '../../../global/mixins/_element-border';
+@use '../../../global/mixins/base-font.scss';
 
 .form-control {
-    @include element-border.elementBorder;
+    @include element-border.elementBorder();
+    // @include base-font.baseFont(colors.$dark);
     font-size: 16px;
-    color: colors.$dark;
-    height: 40px;
     display: blok;
-    color: colors.$dark;
     padding: 10px;
+    outline: none;
+
+    &:focus {
+        border: 1px solid colors.$primary;
+    }
+
+    &--active {
+        border: 1px solid colors.$primary;
+    }
 }

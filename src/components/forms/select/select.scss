@@ -1,0 +1,15 @@
+@use '../../../global/colors';
+@use '../../../global/mixins/element-border';
+
+.form-select {
+    background-color: colors.$white;
+    padding: 10px;
+    color: colors.$dark;
+    font-size: 16px;
+    cursor: pointer;
+    @include element-border.elementBorder;
+
+    &:focus {
+        border: 1px solid colors.$primary;
+    }
+}
