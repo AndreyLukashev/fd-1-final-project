@@ -19,12 +19,16 @@ $columnsCount: 12;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
+
+    &-align-center {
+        align-items: center;
+    }
 }
 
 @for $i from 1 through $columnsCount {
     .col-#{$i} {
         flex: 0 0 calc($i / $columnsCount * 100%);
-        padding: 0 12px
+        padding: 0 12px;
     }
 }
 
@@ -34,7 +38,7 @@ $value in breakpoints.$breakpoints {
         @for $i from 1 through $columnsCount {
             .col-#{$key}-#{$i} {
                 flex: 0 0 calc($i / $columnsCount * 100%);
-                padding: 0 12px
+                padding: 0 12px;
             }
         }
     }

@@ -1,0 +1,62 @@
+@use '../../global/colors';
+@use '../../global/mixins/element-border';
+
+.main-menu {
+    background-color: colors.$white;
+    height: 56px;
+    border-top: 1px solid colors.$gray300;
+    border-bottom: 1px solid colors.$gray300;
+    display: flex;
+    align-items: center;
+
+    &__nav {
+        display: flex;
+        grid-column-gap: 30px;
+    }
+
+    &__link {
+        color: colors.$dark;
+        text-decoration: none;
+    }
+
+    &__item {
+        &--all {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: '';
+                margin-right: 6px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url('/images/icons/control/menu.svg');
+            }
+        }
+
+        &:hover {
+            .main-menu__link {
+                color: colors.$primary;
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 12px;
+    }
+
+    &__ship-option-img {
+        display: inline-block;
+        width: 22px;
+        height: 16px;
+        margin-left: 6px;
+    }
+
+    &__dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 12px;
+    }
+}

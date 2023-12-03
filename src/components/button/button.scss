@@ -15,12 +15,11 @@
     }
 
     &-secondary {
-        background-color: colors.$white;
+        background: colors.$white;
         color: colors.$primary;
-        @include element-border.elementBorder;
+        @include element-border.elementBorder
     }
 }
-
 
 .btn-30 {
     font-size: 13px;

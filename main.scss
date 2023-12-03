@@ -1,13 +1,13 @@
-@use './src/global/_fonts';
+@use './src/global/fonts';
 @use './src/global/mixins/base-font';
-@use './src/global/mixins/_element-border';
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    @include base-font.base-font;
+    @include base-font.baseFont();
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
