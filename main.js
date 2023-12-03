@@ -10,5 +10,7 @@ import './src/components/forms/forms.js';
 
 import './src/components/button/button.js';
 
+import './src/components/app-header/app-header.js';
+
 import './src/global/utils.scss';
 

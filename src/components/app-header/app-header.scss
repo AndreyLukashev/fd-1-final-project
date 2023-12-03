@@ -1,0 +1,23 @@
+@use '../../global/colors';
+
+.app-header {
+    &__form {
+        border: 1px solid colors.$primary;
+        border-radius: 6px;
+    }
+
+    &__actions {
+        display: flex;
+        grid-column-gap: 23px;
+    }
+
+    &__action {
+        display: grid;
+        grid-row-gap: 7px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: colors.$gray500;
+    }
+}
